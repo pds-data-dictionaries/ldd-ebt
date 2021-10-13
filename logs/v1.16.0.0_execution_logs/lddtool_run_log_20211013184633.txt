@@ -3,7 +3,7 @@
 >>  INFO IM Version Id: 1.16.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.22
->>  INFO Date: Wed Oct 13 17:57:13 UTC 2021
+>>  INFO Date: Wed Oct 13 18:46:35 UTC 2021
 >>  INFO PARENT_DIR: /tmp/lddtool-13.1.0
 >>  INFO SCRIPT_DIR: /tmp/lddtool-13.1.0/bin
 >>  INFO LIB_DIR: /tmp/lddtool-13.1.0/lib
@@ -19,6 +19,13 @@
 >>> INFO Attribute: <ambient_clouds> - The default maximum value provided by the attribute's data type is being overridden with 100
 >>> INFO Attribute: <weather_notes> - The default minimum characters provided by the attribute's data type is being overridden with 1
 >>> INFO Attribute: <weather_notes> - The default maximum characters provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
 >>> INFO Attribute: <wcs_axes> - The default minimum value provided by the attribute's data type is being overridden with 1
 >>> INFO Attribute: <coordinate_system_equinox> - The default minimum value provided by the attribute's data type is being overridden with 1950
 >>> INFO Attribute: <coordinate_system_celestial_pole_longitude> - The default minimum value provided by the attribute's data type is being overridden with 0
