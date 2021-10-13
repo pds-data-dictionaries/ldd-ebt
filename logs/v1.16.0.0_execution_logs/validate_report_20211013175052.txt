@@ -1,16 +1,15 @@
-Fatal error: [node=null,object=null,url=file:/home/runner/work/ldd-ebt/ldd-ebt/test/test1_VALID.xml,line=45,col=45,offset=-1]: The prefix "ebt" for element "ebt:Earth_Based_Telescope_Parameters" is not bound.
 
 PDS Validate Tool Report
 
 Configuration:
    Version                       2.1.0
-   Date                          2021-10-13T17:47:17Z
+   Date                          2021-10-13T17:50:54Z
 
 Parameters:
    Targets                       [file:/home/runner/work/ldd-ebt/ldd-ebt/test/test1_VALID.xml]
    Rule Type                     pds4.label
-   User Specified Schemas        [file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/692c6fe2f28368d1174f4096d60c0687a3ac368c/1.16.0.0/PDS4_EBT_1G00_1G00.xsd, file:/tmp/PDS4_PDS_1G00.xsd]
-   User Specified Schematrons    [file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/692c6fe2f28368d1174f4096d60c0687a3ac368c/1.16.0.0/PDS4_EBT_1G00_1G00.sch, file:/tmp/PDS4_PDS_1G00.sch]
+   User Specified Schemas        [file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/dc9125c4c6539c8862aff9b63ea0f46a25408366/1.16.0.0/PDS4_EBT_1G00_1G00.xsd, file:/tmp/PDS4_PDS_1G00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/dc9125c4c6539c8862aff9b63ea0f46a25408366/1.16.0.0/PDS4_EBT_1G00_1G00.sch, file:/tmp/PDS4_PDS_1G00.sch]
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
@@ -24,13 +23,14 @@ Parameters:
 Product Level Validation Results
 
   FAIL: file:/home/runner/work/ldd-ebt/ldd-ebt/test/test1_VALID.xml
-      ERROR  [error.label.schema]   line 45, 45: The prefix "ebt" for element "ebt:Earth_Based_Telescope_Parameters" is not bound.
+      ERROR  [error.label.schematron]   line 67, 51: At least one of the following must be present: ebt:frame_spice_name, pds:name, pds:Internal_Reference.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
         1 product validation(s) completed
 
 Summary:
 
   1 error(s)
-  0 warning(s)
+  1 warning(s)
 
   Product Validation Summary:
     0          product(s) passed
@@ -43,8 +43,9 @@ Summary:
     0          check(s) skipped
 
   Message Types:
-    1            error.label.schema
+    1            error.label.schematron
+    1            warning.label.missing_schematron_spec
 
 End of Report
-Completed execution in 5484 ms
+Completed execution in 6246 ms
 
