@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch"
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
   <name>Earth-Based Telescope</name>
-  <ldd_version_id>1.16.0.0</ldd_version_id>
+  <ldd_version_id>1.0.0.0</ldd_version_id>
   <dictionary_type>Discipline</dictionary_type>
   <full_name>Ben Hirsch</full_name>
   <steward_id>sbn</steward_id>
   <namespace_id>ebt</namespace_id>
-  <last_modification_date_time>2021-10-01</last_modification_date_time>
+  <last_modification_date_time>2021-10-13</last_modification_date_time>
 
 <!-- EBT Parameters attributes -->
 
