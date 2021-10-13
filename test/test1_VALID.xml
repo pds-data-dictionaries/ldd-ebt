@@ -65,7 +65,7 @@
                 <ebt:vertical_coordinate_pixel unit="pixel">5280.0</ebt:vertical_coordinate_pixel>
               </ebt:World_Axis>
               <ebt:Reference_Frame_Identification>
-                <ebt:name>FK5</ebt:name>
+                <pds:name>FK5</pds:name>
               </ebt:Reference_Frame_Identification>
             </ebt:Reference_Frame_Parameters>
             <ebt:Coordinate_Frame_Transformation_Matrix>
