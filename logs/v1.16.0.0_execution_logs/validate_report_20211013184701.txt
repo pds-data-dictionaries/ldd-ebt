@@ -3,13 +3,13 @@ PDS Validate Tool Report
 
 Configuration:
    Version                       2.1.0
-   Date                          2021-10-13T17:57:27Z
+   Date                          2021-10-13T18:47:03Z
 
 Parameters:
-   Targets                       [file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/cb29c160e6bc330cd68d536d14f7af5f4ae225a0/1.16.0.0/PDS4_EBT_1G00_1G00.xml]
+   Targets                       [file:/home/runner/work/ldd-ebt/ldd-ebt/test/test1_VALID.xml]
    Rule Type                     pds4.label
-   User Specified Schemas        [file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/cb29c160e6bc330cd68d536d14f7af5f4ae225a0/1.16.0.0/PDS4_EBT_1G00_1G00.xsd, file:/tmp/PDS4_PDS_1G00.xsd]
-   User Specified Schematrons    [file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/cb29c160e6bc330cd68d536d14f7af5f4ae225a0/1.16.0.0/PDS4_EBT_1G00_1G00.sch, file:/tmp/PDS4_PDS_1G00.sch]
+   User Specified Schemas        [file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/ad96b87ee8ccf51f3dd4ed0c6b8de28d81a366ef/1.16.0.0/PDS4_EBT_1G00_1G00.xsd, file:/tmp/PDS4_PDS_1G00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/ad96b87ee8ccf51f3dd4ed0c6b8de28d81a366ef/1.16.0.0/PDS4_EBT_1G00_1G00.sch, file:/tmp/PDS4_PDS_1G00.sch]
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
@@ -22,13 +22,14 @@ Parameters:
 
 Product Level Validation Results
 
-  PASS: file:/home/runner/work/ldd-ebt/ldd-ebt/build/development/cb29c160e6bc330cd68d536d14f7af5f4ae225a0/1.16.0.0/PDS4_EBT_1G00_1G00.xml
+  PASS: file:/home/runner/work/ldd-ebt/ldd-ebt/test/test1_VALID.xml
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
         1 product validation(s) completed
 
 Summary:
 
   0 error(s)
-  0 warning(s)
+  1 warning(s)
 
   Product Validation Summary:
     1          product(s) passed
@@ -40,7 +41,9 @@ Summary:
     0          check(s) failed
     0          check(s) skipped
 
+  Message Types:
+    1            warning.label.missing_schematron_spec
 
 End of Report
-Completed execution in 6786 ms
+Completed execution in 5085 ms
 
