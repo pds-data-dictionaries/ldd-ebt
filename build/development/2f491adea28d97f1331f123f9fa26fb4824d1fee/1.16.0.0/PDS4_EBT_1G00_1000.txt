@@ -2,12 +2,12 @@ PDS4 Local Data Dictionary Processing Report
 
 Configuration:
    LDDTool Version        10.0.0
-   LDD Version Id:        1.16.0.0
+   LDD Version Id:        1.0.0.0
    LDD Label Version Id:  1.22
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Wed Oct 13 18:46:35 UTC 2021
+   Time                   Wed Oct 13 19:43:34 UTC 2021
    Common Schema          [PDS4_PDS_1G00.xsd]
    Common Schematron      [PDS4_PDS_1G00.sch]
    IM Version Id:         1.16.0.0
@@ -40,12 +40,12 @@ Detailed validation messages
 
 Parsed Input - Header:
    LDD Name               Earth-Based Telescope
-   LDD Version            1.16.0.0
+   LDD Version            1.0.0.0
    Full Name              Ben Hirsch
    Steward                sbn
    Namespace Id           ebt
    Comment                _TBD_Ingest_LDD
-   Last Modification Time 2021-10-01
+   Last Modification Time 2021-10-13
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
