@@ -3,13 +3,11 @@
 >>  INFO IM Version Id: 1.16.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.22
->>  INFO Date: Wed Oct 13 17:12:51 UTC 2021
+>>  INFO Date: Wed Oct 13 17:35:06 UTC 2021
 >>  INFO PARENT_DIR: /tmp/lddtool-13.1.0
 >>  INFO SCRIPT_DIR: /tmp/lddtool-13.1.0/bin
 >>  INFO LIB_DIR: /tmp/lddtool-13.1.0/lib
 
->>> ERROR Class:  - At least one value for pds:local_reference_type or pds:reference_type must be defined for ebt:Body_Identification_Base/pds:Internal_Reference.
->>> ERROR Class:  - At least one value for pds:local_reference_type or pds:reference_type must be defined for ebt:Frame_Identification_Base/pds:Internal_Reference.
 >>> INFO Init:  - Config.Properties Namespace Id Using:pds
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
 >>> INFO Attribute: <airmass> - The default minimum value provided by the attribute's data type is being overridden with 0
@@ -50,7 +48,7 @@
 
  -- LDDTool Execution Summary --
      3 warning(s)
-     2 error(s)
+     0 error(s)
      0 fatal error(s)
 
 Input:
@@ -70,4 +68,4 @@ Output:
      - ./PDS4_EBT_1G00_1G00.xml
      - ./PDS4_EBT_1G00_1G00.JSON
 
->>  INFO Exit(1)
+>>  INFO Exit(0)
