@@ -2991,40 +2991,64 @@
     </DD_Rule_Statement>
   </DD_Rule>
 
+  <DD_Rule>
+    <local_identifier>Frame_Identification_Base_0</local_identifier>  
+    <rule_context>//ebt:Frame_Identification_Base/pds:Internal_Reference</rule_context>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>pds:reference_type = 'geometry_to_reference_frame'
+      </rule_test>
+      <rule_message>For Internal_Reference in ebt:Frame_Identification_Base, reference_type must equal 'geometry_to_reference_frame'
+      </rule_message>
+    </DD_Rule_Statement>
+  </DD_Rule>
+
+  <DD_Rule>
+    <local_identifier>Body_Identification_Base_0</local_identifier>  
+    <rule_context>//ebt:Body_Identification_Base/pds:Internal_Reference</rule_context>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>pds:reference_type = 'geometry_to_reference_frame'
+      </rule_test>
+      <rule_message>For Internal_Reference in ebt:Body_Identification_Base, reference_type must equal 'geometry_to_body'
+      </rule_message>
+    </DD_Rule_Statement>
+  </DD_Rule>
+
 <!-- WCS schematron rules -->
 
   <DD_Rule>
-	<local_identifier>World_Coordinate_System_0</local_identifier>
-	<rule_context>ebt:World_Coordinate_System</rule_context>
+	  <local_identifier>World_Coordinate_System_0</local_identifier>
+	  <rule_context>ebt:World_Coordinate_System</rule_context>
 	
-	<DD_Rule_Statement>
-	<rule_type>Assert</rule_type>
-	  <rule_test>if ((ebt:Reference_Frame_Parameters/ebt:World_Axis/ebt:coordinate_system_projection = ('Gnomonic with polynomial distortion', 'Gnomonic with polynomial distortion plus SIP')) and not (ebt:PV_Distortion_Matrix)) then false() else true()</rule_test>
-	  <rule_message>If ebt:coordinate_system_projection includes polynomial distortion, you must use the ebt:PV_Distortion_Matrix class.</rule_message>
-	</DD_Rule_Statement>
+	  <DD_Rule_Statement>
+	    <rule_type>Assert</rule_type>
+	      <rule_test>if ((ebt:Reference_Frame_Parameters/ebt:World_Axis/ebt:coordinate_system_projection = ('Gnomonic with polynomial distortion', 'Gnomonic with polynomial distortion plus SIP')) and not (ebt:PV_Distortion_Matrix)) then false() else true()</rule_test>
+	      <rule_message>If ebt:coordinate_system_projection includes polynomial distortion, you must use the ebt:PV_Distortion_Matrix class.</rule_message>
+	  </DD_Rule_Statement>
 	
-	<DD_Rule_Statement>
-	<rule_type>Assert</rule_type>
-	  <rule_test>if ((ebt:Reference_Frame_Parameters/ebt:World_Axis/ebt:coordinate_system_projection = ('Gnomonic plus SIP', 'Gnomonic with polynomial distortion plus SIP')) and not (ebt:SIP_Distortion_Terms)) then false() else true()</rule_test>
-	  <rule_message>If ebt:coordinate_system_projection includes 'plus SIP', you must use the ebt:SIP_Distortion_Terms class.</rule_message>
-	</DD_Rule_Statement>
+	  <DD_Rule_Statement>
+	    <rule_type>Assert</rule_type>
+	    <rule_test>if ((ebt:Reference_Frame_Parameters/ebt:World_Axis/ebt:coordinate_system_projection = ('Gnomonic plus SIP', 'Gnomonic with polynomial distortion plus SIP')) and not (ebt:SIP_Distortion_Terms)) then false() else true()</rule_test>
+	    <rule_message>If ebt:coordinate_system_projection includes 'plus SIP', you must use the ebt:SIP_Distortion_Terms class.</rule_message>
+	  </DD_Rule_Statement>
   </DD_Rule>
   
   <DD_Rule>
-	<local_identifier>Reference_Frame_Parameters_0</local_identifier>
-	<rule_context>ebt:World_Coordinate_System/ebt:Reference_Frame_Parameters</rule_context>
+	  <local_identifier>Reference_Frame_Parameters_0</local_identifier>
+	  <rule_context>ebt:World_Coordinate_System/ebt:Reference_Frame_Parameters</rule_context>
 	
-	<DD_Rule_Statement>
-	<rule_type>Assert</rule_type>
-	  <rule_test>if (ebt:Reference_Frame_Identification/ebt:name = ('GAPPT', 'ICRS') and not(ebt:coordinate_system_equinox/@xsi:nil eq 'true'))  then false() else true()</rule_test>
-	  <rule_message>If ebt:Reference_Frame_Identification/pds:name = GAPPT or ICRS, then ebt:coordinate_system_equinox must be nill.</rule_message>
-	</DD_Rule_Statement>
+	  <DD_Rule_Statement>
+	    <rule_type>Assert</rule_type>
+	    <rule_test>if (ebt:Reference_Frame_Identification/ebt:name = ('GAPPT', 'ICRS') and not(ebt:coordinate_system_equinox/@xsi:nil eq 'true'))  then false() else true()</rule_test>
+	    <rule_message>If ebt:Reference_Frame_Identification/pds:name = GAPPT or ICRS, then ebt:coordinate_system_equinox must be nill.</rule_message>
+	  </DD_Rule_Statement>
 	
-	<DD_Rule_Statement>
-	<rule_type>Assert</rule_type>
-	  <rule_test>ebt:wcs_axes = count(ebt:World_Axis)</rule_test>
-	  <rule_message>The number of ebt:World_Axis elements must match the number found in the ebt:wcs_axes attribute.</rule_message>
-	</DD_Rule_Statement>
+	  <DD_Rule_Statement>
+	    <rule_type>Assert</rule_type>
+	    <rule_test>ebt:wcs_axes = count(ebt:World_Axis)</rule_test>
+	    <rule_message>The number of ebt:World_Axis elements must match the number found in the ebt:wcs_axes attribute.</rule_message>
+	  </DD_Rule_Statement>
   </DD_Rule>
 
 </Ingest_LDD>
