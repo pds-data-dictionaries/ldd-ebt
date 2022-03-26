@@ -4,7 +4,7 @@
       "Title": "PDS4 Data Dictionary" ,
       "IM Version": "1.16.0.0" ,
       "LDD Version": "1.0.0.0" ,
-      "Date": "Wed Oct 13 19:43:34 UTC 2021" ,
+      "Date": "Sat Mar 26 21:15:34 UTC 2022" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "namespaces": ["pds:", "ebt:"] ,
       "classDictionary": [
@@ -2136,6 +2136,101 @@
         }
       , {
           "class": {
+            "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry" ,
+            "title": "Target_Geometry" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "ebt" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": "This class contains attributes that describe angles and points in reference to the target."
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.solar_phase_angle" ,
+                "title": "solar_phase_angle" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.solar_phase_angle"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subsolar_latitude" ,
+                "title": "subsolar_latitude" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subsolar_latitude"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subsolar_longitude" ,
+                "title": "subsolar_longitude" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subsolar_longitude"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subobserver_latitude" ,
+                "title": "subobserver_latitude" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subobserver_latitude"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subobserver_longitude" ,
+                "title": "subobserver_longitude" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1050" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subobserver_longitude"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
             "identifier": "0001_NASA_PDS_1.ebt.Telescope_Geometry" ,
             "title": "Telescope_Geometry" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
@@ -2191,6 +2286,22 @@
                 "classOrder": "1030" ,
                 "classId": [
                   "0001_NASA_PDS_1.ebt.Distances"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.ebt.Telescope_Geometry.ebt.Target_Geometry" ,
+                "title": "Target_Geometry" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "classId": [
+                  "0001_NASA_PDS_1.ebt.Target_Geometry"
                  ]
               }
             }
@@ -4621,6 +4732,131 @@
             "maximumCharacters": "Unbounded" ,
             "minimumValue": "-1.7976931348623157e308" ,
             "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.solar_phase_angle" ,
+            "title": "solar_phase_angle" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "ebt" ,
+            "steward": "sbn" ,
+            "versionId": "1.16" ,
+            "description": "The solar_phase_angle attribute provides a measure of the relationship between the instrument viewing position and the sun. Solar phase angle is measured at the target; it is the angle between a vector to the sun and a vector to the instrument." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "180" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subobserver_latitude" ,
+            "title": "subobserver_latitude" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "ebt" ,
+            "steward": "sbn" ,
+            "versionId": "1.16" ,
+            "description": "The subobserver_latitude attribute gives the value of the planetocentric latitude at the subobserver point on the target." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-90" ,
+            "maximumValue": "90" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subobserver_longitude" ,
+            "title": "subobserver_longitude" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "ebt" ,
+            "steward": "sbn" ,
+            "versionId": "1.16" ,
+            "description": "The subobserver_longitude attribute gives the value of the planetocentric longitude at the subobserver point on the target." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "360" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subsolar_latitude" ,
+            "title": "subsolar_latitude" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "ebt" ,
+            "steward": "sbn" ,
+            "versionId": "1.16" ,
+            "description": "The subsolar_latitude attribute gives the value of the planetocentric latitude at the subsolar point on the target." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-90" ,
+            "maximumValue": "90" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.ebt.Target_Geometry.ebt.subsolar_longitude" ,
+            "title": "subsolar_longitude" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "ebt" ,
+            "steward": "sbn" ,
+            "versionId": "1.16" ,
+            "description": "The subsolar_longitude attribute gives the value of the planetocentric longitude at the subsolar point on the target." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "360" ,
             "pattern": "null" ,
             "unitOfMeasure": "Units_of_Angle" ,
             "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
