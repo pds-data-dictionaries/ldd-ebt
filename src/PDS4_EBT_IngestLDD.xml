@@ -12,7 +12,7 @@
   <full_name>Ben Hirsch</full_name>
   <steward_id>sbn</steward_id>
   <namespace_id>ebt</namespace_id>
-  <last_modification_date_time>2021-10-13</last_modification_date_time>
+  <last_modification_date_time>2022-03-26</last_modification_date_time>
 
 <!-- EBT Parameters attributes -->
 
@@ -1553,6 +1553,99 @@
     </DD_Value_Domain>
   </DD_Attribute>
 
+<!-- Target_Geometry Attributes -->
+
+  <DD_Attribute>
+    <name>solar_phase_angle</name>
+    <version_id>1.0</version_id>
+    <local_identifier>solar_phase_angle</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Ben Hirsch</submitter_name>
+    <definition>The solar_phase_angle attribute provides a measure of
+      the relationship between the instrument viewing position and
+      the sun. Solar phase angle is measured at the target; it is the
+      angle between a vector to the sun and a vector to the instrument.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Real</value_data_type>
+      <minimum_value>0</minimum_value>
+      <maximum_value>180</maximum_value>
+      <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
+    <name>subsolar_latitude</name>
+    <version_id>1.0</version_id>
+    <local_identifier>subsolar_latitude</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Ben Hirsch</submitter_name>
+    <definition>The subsolar_latitude attribute gives the value
+      of the planetocentric latitude at the subsolar point on the
+      target.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Real</value_data_type>
+      <minimum_value>-90</minimum_value>
+      <maximum_value>90</maximum_value>
+      <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
+    <name>subsolar_longitude</name>
+    <version_id>1.0</version_id>
+    <local_identifier>subsolar_longitude</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Ben Hirsch</submitter_name>
+    <definition>The subsolar_longitude attribute gives the value
+      of the planetocentric longitude at the subsolar point on the
+      target.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Real</value_data_type>
+      <minimum_value>0</minimum_value>
+      <maximum_value>360</maximum_value>
+      <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
+    <name>subobserver_latitude</name>
+    <version_id>1.0</version_id>
+    <local_identifier>subobserver_latitude</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Ben Hirsch</submitter_name>
+    <definition>The subobserver_latitude attribute gives the
+      value of the planetocentric latitude at the subobserver point
+      on the target.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Real</value_data_type>
+      <minimum_value>-90</minimum_value>
+      <maximum_value>90</maximum_value>
+      <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
+    <name>subobserver_longitude</name>
+    <version_id>1.0</version_id>
+    <local_identifier>subobserver_longitude</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Ben Hirsch</submitter_name>
+    <definition>The subobserver_longitude attribute gives the
+      value of the planetocentric longitude at the subobserver point
+      on the target.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Real</value_data_type>
+      <minimum_value>0</minimum_value>
+      <maximum_value>360</maximum_value>
+      <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
 <!-- EBT Classes -->
 
   <DD_Class>
@@ -1620,6 +1713,12 @@
 	  <minimum_occurrences>0</minimum_occurrences>
 	  <maximum_occurrences>1</maximum_occurrences>
 	</DD_Association>
+  <DD_Association>
+    <identifier_reference>Target_Geometry</identifier_reference>
+    <reference_type>component_of</reference_type>
+    <minimum_occurrences>0</minimum_occurrences>
+    <maximum_occurrences>1</maximum_occurrences>
+  </DD_Association>
   </DD_Class>
 
   <DD_Class>
@@ -2198,6 +2297,49 @@
     <DD_Association>
       <identifier_reference>pds.Internal_Reference</identifier_reference>
       <reference_type>component_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+  </DD_Class>
+
+<!-- Target Geometry Classes -->
+
+  <DD_Class>
+    <name>Target_Geometry</name>
+    <version_id>1.0</version_id>
+    <local_identifier>Target_Geometry</local_identifier>
+    <submitter_name>SBN</submitter_name>
+    <definition>This class contains attributes that describe angles and points
+      in reference to the target.</definition>
+    <abstract_flag>false</abstract_flag>
+    <element_flag>false</element_flag>
+    <DD_Association>
+      <identifier_reference>solar_phase_angle</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>subsolar_latitude</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>subsolar_longitude</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>subobserver_latitude</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>subobserver_longitude</identifier_reference>
+      <reference_type>attribute_of</reference_type>
       <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
