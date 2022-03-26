@@ -3,7 +3,7 @@
 >>  INFO IM Version Id: 1.16.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.22
->>  INFO Date: Wed Oct 13 19:43:34 UTC 2021
+>>  INFO Date: Sat Mar 26 21:15:34 UTC 2022
 >>  INFO PARENT_DIR: /tmp/lddtool-13.1.0
 >>  INFO SCRIPT_DIR: /tmp/lddtool-13.1.0/bin
 >>  INFO LIB_DIR: /tmp/lddtool-13.1.0/lib
@@ -49,6 +49,16 @@
 >>> INFO Attribute: <horizontal_pixel_field_of_view> - The default maximum value provided by the attribute's data type is being overridden with 360
 >>> INFO Attribute: <vertical_pixel_field_of_view> - The default minimum value provided by the attribute's data type is being overridden with 0
 >>> INFO Attribute: <vertical_pixel_field_of_view> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <solar_phase_angle> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <solar_phase_angle> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <subsolar_latitude> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <subsolar_latitude> - The default maximum value provided by the attribute's data type is being overridden with 90
+>>> INFO Attribute: <subsolar_longitude> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <subsolar_longitude> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <subobserver_latitude> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <subobserver_latitude> - The default maximum value provided by the attribute's data type is being overridden with 90
+>>> INFO Attribute: <subobserver_longitude> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <subobserver_longitude> - The default maximum value provided by the attribute's data type is being overridden with 360
 >>> WARNING Init:  - Config.Properties Namespace Id Not Found:ebt
 >>> WARNING Header:  - New steward has been specified:sbn
 >>> WARNING Header:  - New namespace id has been specified:ebt

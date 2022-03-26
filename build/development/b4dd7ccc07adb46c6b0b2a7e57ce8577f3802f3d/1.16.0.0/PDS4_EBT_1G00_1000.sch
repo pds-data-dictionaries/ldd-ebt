@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:ebt  Version:1.0.0.0 - Wed Oct 13 19:43:34 UTC 2021 -->
+  <!-- PDS4 Schematron for Name Space Id:ebt  Version:1.0.0.0 - Sat Mar 26 21:15:34 UTC 2022 -->
   <!-- Generated from the PDS4 Information Model Version 1.16.0.0 - System Build 11.1 -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
@@ -623,6 +623,41 @@
     <sch:rule context="ebt:Seeing/ebt:seeing_full_width_half_maximum">
       <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad')">
         <title>ebt:Seeing/ebt:seeing_full_width_half_maximum/ebt:seeing_full_width_half_maximum</title>
+        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="ebt:Target_Geometry/ebt:solar_phase_angle">
+      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad')">
+        <title>ebt:Target_Geometry/ebt:solar_phase_angle/ebt:solar_phase_angle</title>
+        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="ebt:Target_Geometry/ebt:subobserver_latitude">
+      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad')">
+        <title>ebt:Target_Geometry/ebt:subobserver_latitude/ebt:subobserver_latitude</title>
+        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="ebt:Target_Geometry/ebt:subobserver_longitude">
+      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad')">
+        <title>ebt:Target_Geometry/ebt:subobserver_longitude/ebt:subobserver_longitude</title>
+        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="ebt:Target_Geometry/ebt:subsolar_latitude">
+      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad')">
+        <title>ebt:Target_Geometry/ebt:subsolar_latitude/ebt:subsolar_latitude</title>
+        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="ebt:Target_Geometry/ebt:subsolar_longitude">
+      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad')">
+        <title>ebt:Target_Geometry/ebt:subsolar_longitude/ebt:subsolar_longitude</title>
         The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad'.</sch:assert>
     </sch:rule>
   </sch:pattern>

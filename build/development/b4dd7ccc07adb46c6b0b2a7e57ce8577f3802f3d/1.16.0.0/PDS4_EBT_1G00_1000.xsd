@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:ebt  Version:1.0.0.0 - Wed Oct 13 19:43:34 UTC 2021 -->
+  <!-- PDS4 XML/Schema for Name Space Id:ebt  Version:1.0.0.0 - Sat Mar 26 21:15:34 UTC 2022 -->
   <!-- Generated from the PDS4 Information Model Version 1.16.0.0 - System Build 11.1 -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
@@ -434,6 +434,20 @@ _TBD_Ingest_LDD
     </xs:sequence>
   </xs:complexType>
 
+  <xs:complexType name="Target_Geometry">
+    <xs:annotation>
+      <xs:documentation>This class contains attributes that describe
+        angles and points in reference to the target.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="solar_phase_angle" type="ebt:solar_phase_angle" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="subsolar_latitude" type="ebt:subsolar_latitude" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="subsolar_longitude" type="ebt:subsolar_longitude" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="subobserver_latitude" type="ebt:subobserver_latitude" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="subobserver_longitude" type="ebt:subobserver_longitude" minOccurs="0" maxOccurs="1"> </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
   <xs:complexType name="Telescope_Geometry">
     <xs:annotation>
       <xs:documentation>The Geometry_Telescope class is a container for
@@ -445,6 +459,7 @@ _TBD_Ingest_LDD
       <xs:element name="World_Coordinate_System" type="ebt:World_Coordinate_System" minOccurs="0" maxOccurs="1"> </xs:element>
       <xs:element name="Pixel_Dimensions" type="ebt:Pixel_Dimensions" minOccurs="0" maxOccurs="1"> </xs:element>
       <xs:element name="Distances" type="ebt:Distances" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="Target_Geometry" type="ebt:Target_Geometry" minOccurs="0" maxOccurs="1"> </xs:element>
     </xs:sequence>
   </xs:complexType>
 
@@ -1391,6 +1406,28 @@ _TBD_Ingest_LDD
     </xs:simpleContent>
   </xs:complexType>
 
+  <xs:simpleType name="solar_phase_angle_WO_Units">
+    <xs:restriction base="pds:ASCII_Real">
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="180"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="solar_phase_angle">
+    <xs:annotation>
+      <xs:documentation>The solar_phase_angle attribute provides a
+        measure of the relationship between the instrument viewing
+        position and the sun. Solar phase angle is measured at the
+        target; it is the angle between a vector to the sun and a vector
+        to the instrument.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="ebt:solar_phase_angle_WO_Units">
+        <xs:attribute name="unit" type="pds:Units_of_Angle" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
   <xs:simpleType name="spacecraft_central_body_distance_WO_Units">
     <xs:restriction base="pds:ASCII_Real">
      <xs:minInclusive value="-1.7976931348623157e308"/>
@@ -1906,6 +1943,86 @@ _TBD_Ingest_LDD
     <xs:simpleContent>
       <xs:extension base="ebt:stop_target_ssb_distance_WO_Units">
         <xs:attribute name="unit" type="pds:Units_of_Length" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="subobserver_latitude_WO_Units">
+    <xs:restriction base="pds:ASCII_Real">
+     <xs:minInclusive value="-90"/>
+     <xs:maxInclusive value="90"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="subobserver_latitude">
+    <xs:annotation>
+      <xs:documentation>The subobserver_latitude attribute gives the
+        value of the planetocentric latitude at the subobserver point on
+        the target.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="ebt:subobserver_latitude_WO_Units">
+        <xs:attribute name="unit" type="pds:Units_of_Angle" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="subobserver_longitude_WO_Units">
+    <xs:restriction base="pds:ASCII_Real">
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="360"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="subobserver_longitude">
+    <xs:annotation>
+      <xs:documentation>The subobserver_longitude attribute gives the
+        value of the planetocentric longitude at the subobserver point
+        on the target.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="ebt:subobserver_longitude_WO_Units">
+        <xs:attribute name="unit" type="pds:Units_of_Angle" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="subsolar_latitude_WO_Units">
+    <xs:restriction base="pds:ASCII_Real">
+     <xs:minInclusive value="-90"/>
+     <xs:maxInclusive value="90"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="subsolar_latitude">
+    <xs:annotation>
+      <xs:documentation>The subsolar_latitude attribute gives the value
+        of the planetocentric latitude at the subsolar point on the
+        target.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="ebt:subsolar_latitude_WO_Units">
+        <xs:attribute name="unit" type="pds:Units_of_Angle" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="subsolar_longitude_WO_Units">
+    <xs:restriction base="pds:ASCII_Real">
+     <xs:minInclusive value="0"/>
+     <xs:maxInclusive value="360"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="subsolar_longitude">
+    <xs:annotation>
+      <xs:documentation>The subsolar_longitude attribute gives the value
+        of the planetocentric longitude at the subsolar point on the
+        target.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="ebt:subsolar_longitude_WO_Units">
+        <xs:attribute name="unit" type="pds:Units_of_Angle" use="required" />
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
