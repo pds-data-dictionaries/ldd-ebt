@@ -1,14 +1,15 @@
 
->>  INFO LDDTOOL Version: 10.0.0
+>>  INFO LDDTOOL Version: 14.1.2
 >>  INFO IM Version Id: 1.16.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.22
->>  INFO Date: Sat Mar 26 21:15:34 UTC 2022
->>  INFO PARENT_DIR: /tmp/lddtool-13.1.0
->>  INFO SCRIPT_DIR: /tmp/lddtool-13.1.0/bin
->>  INFO LIB_DIR: /tmp/lddtool-13.1.0/lib
+>>  INFO Date: Sat Mar 18 18:38:04 UTC 2023
+>>  INFO PARENT_DIR: /tmp/lddtool-14.1.2
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.1.2/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.1.2/lib
 
->>> INFO Init:  - Config.Properties Namespace Id Using:pds
+>>> INFO Init:  - Config.Properties Namespace Id Found:ebt
+>>> INFO Init:  - Config.Properties Namespace Id Using:ebt
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
 >>> INFO Attribute: <airmass> - The default minimum value provided by the attribute's data type is being overridden with 0
 >>> INFO Attribute: <observing_notes> - The default minimum characters provided by the attribute's data type is being overridden with 1
@@ -45,10 +46,6 @@
 >>> INFO Attribute: <polynomial_order> - The default maximum value provided by the attribute's data type is being overridden with 9
 >>> INFO Attribute: <p_polynomial_degree> - The default minimum value provided by the attribute's data type is being overridden with 0
 >>> INFO Attribute: <q_polynomial_degree> - The default minimum value provided by the attribute's data type is being overridden with 0
->>> INFO Attribute: <horizontal_pixel_field_of_view> - The default minimum value provided by the attribute's data type is being overridden with 0
->>> INFO Attribute: <horizontal_pixel_field_of_view> - The default maximum value provided by the attribute's data type is being overridden with 360
->>> INFO Attribute: <vertical_pixel_field_of_view> - The default minimum value provided by the attribute's data type is being overridden with 0
->>> INFO Attribute: <vertical_pixel_field_of_view> - The default maximum value provided by the attribute's data type is being overridden with 360
 >>> INFO Attribute: <solar_phase_angle> - The default minimum value provided by the attribute's data type is being overridden with 0
 >>> INFO Attribute: <solar_phase_angle> - The default maximum value provided by the attribute's data type is being overridden with 180
 >>> INFO Attribute: <subsolar_latitude> - The default minimum value provided by the attribute's data type is being overridden with -90
@@ -59,12 +56,9 @@
 >>> INFO Attribute: <subobserver_latitude> - The default maximum value provided by the attribute's data type is being overridden with 90
 >>> INFO Attribute: <subobserver_longitude> - The default minimum value provided by the attribute's data type is being overridden with 0
 >>> INFO Attribute: <subobserver_longitude> - The default maximum value provided by the attribute's data type is being overridden with 360
->>> WARNING Init:  - Config.Properties Namespace Id Not Found:ebt
->>> WARNING Header:  - New steward has been specified:sbn
->>> WARNING Header:  - New namespace id has been specified:ebt
 
  -- LDDTool Execution Summary --
-     3 warning(s)
+     0 warning(s)
      0 error(s)
      0 fatal error(s)
 
