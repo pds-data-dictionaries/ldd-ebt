@@ -3,7 +3,7 @@
 <!-- NOTE: DO NOT INCLUDE SPECIFIC SCHEMATRONS IN LABEL. THEY WILL BE ADDED VIA PIPELINE -->
 
 <Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" 
-  xmlns:example="http://pds.nasa.gov/pds4/example/v1"  
+  xmlns:ebt="http://pds.nasa.gov/pds4/ebt/v1"  
   xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
@@ -42,11 +42,75 @@
     </Target_Identification>
 
     <Discipline_Area>
-      <example:My_First_LDD>
-        <example:my_first_attribute>1</example:my_first_attribute>
-      </example:My_First_LDD>
-    </Discipline_Area
->
+      <ebt:Earth_Based_Telescope_Parameters>
+        <ebt:Telescope_Geometry>
+          <ebt:World_Coordinate_System>
+            <ebt:Reference_Frame_Parameters>
+              <ebt:wcs_axes>2</ebt:wcs_axes>
+              <ebt:coordinate_system_equinox>2000.0</ebt:coordinate_system_equinox>
+              <ebt:coordinate_system_celestial_pole_longitude unit="deg">180.0</ebt:coordinate_system_celestial_pole_longitude>
+              <ebt:coordinate_system_celestial_pole_latitude unit="deg">0.0</ebt:coordinate_system_celestial_pole_latitude>
+              <ebt:World_Axis>
+                <ebt:axis_index>1</ebt:axis_index>
+                <ebt:coordinate_name>Right Ascension</ebt:coordinate_name>
+                <ebt:coordinate_system_projection>Gnomonic with polynomial distortion</ebt:coordinate_system_projection>
+                <ebt:world_coordinate_reference_point unit="deg">18.43543</ebt:world_coordinate_reference_point>
+                <ebt:vertical_coordinate_pixel unit="pixel">5280.0</ebt:vertical_coordinate_pixel>
+              </ebt:World_Axis>
+              <ebt:World_Axis>
+                <ebt:axis_index>2</ebt:axis_index>
+                <ebt:coordinate_name>Declination</ebt:coordinate_name>
+                <ebt:coordinate_system_projection>Gnomonic with polynomial distortion</ebt:coordinate_system_projection>
+                <ebt:world_coordinate_reference_point unit="deg">11.02278</ebt:world_coordinate_reference_point>
+                <ebt:vertical_coordinate_pixel unit="pixel">5280.0</ebt:vertical_coordinate_pixel>
+              </ebt:World_Axis>
+              <ebt:Reference_Frame_Identification>
+                <ebt:name>FK5</ebt:name>
+              </ebt:Reference_Frame_Identification>
+            </ebt:Reference_Frame_Parameters>
+            <ebt:Coordinate_Frame_Transformation_Matrix>
+              <ebt:Pixel_Axes>
+                <ebt:horizontal_axis>1</ebt:horizontal_axis>
+                <ebt:vertical_axis>2</ebt:vertical_axis>
+              </ebt:Pixel_Axes>
+              <ebt:Transformation_Element>
+                <ebt:world_axis_index>1</ebt:world_axis_index>
+                <ebt:pixel_axis_index>1</ebt:pixel_axis_index>
+                <ebt:element_value>5.172965500669E-04</ebt:element_value>
+              </ebt:Transformation_Element>
+              <ebt:Transformation_Element>
+                <ebt:world_axis_index>1</ebt:world_axis_index>
+                <ebt:pixel_axis_index>2</ebt:pixel_axis_index>
+                <ebt:element_value>-7.327705933155E-06</ebt:element_value>
+              </ebt:Transformation_Element>
+              <ebt:Transformation_Element>
+                <ebt:world_axis_index>2</ebt:world_axis_index>
+                <ebt:pixel_axis_index>1</ebt:pixel_axis_index>
+                <ebt:element_value>-7.368020404820E-06</ebt:element_value>
+              </ebt:Transformation_Element>
+              <ebt:Transformation_Element>
+                <ebt:world_axis_index>2</ebt:world_axis_index>
+                <ebt:pixel_axis_index>2</ebt:pixel_axis_index>
+                <ebt:element_value>-5.171884835812E-04</ebt:element_value>
+              </ebt:Transformation_Element>
+            </ebt:Coordinate_Frame_Transformation_Matrix>
+            <ebt:PV_Distortion_Matrix>
+              <ebt:Distortion_Element>
+                <ebt:world_axis_index>1</ebt:world_axis_index>
+                <ebt:parameter_number>1</ebt:parameter_number>
+                <ebt:element_value>-2.115030479402E-13</ebt:element_value>
+              </ebt:Distortion_Element>
+            </ebt:PV_Distortion_Matrix>
+          </ebt:World_Coordinate_System>
+        </ebt:Telescope_Geometry>
+        <ebt:Observing_Conditions>
+          <ebt:Airmass>
+            <ebt:airmass unit="airmass">1.252</ebt:airmass>
+            <ebt:airmass_time>2018-11-23T15:59:16Z</ebt:airmass_time>
+          </ebt:Airmass>
+        </ebt:Observing_Conditions>
+      </ebt:Earth_Based_Telescope_Parameters>
+    </Discipline_Area>
   </Observation_Area>
   <File_Area_Observational>
     <File>
