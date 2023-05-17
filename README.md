@@ -1,12 +1,10 @@
-# {LDD Name} Local Data Dictionary (LDD)
+# Earth-Based Telescope Local Data Dictionary (LDD)
 
-The {LDD Name} dictionary [enter description here]
+The Earth-Based Telescope dictionary provides observing parameters, provenance, and geometry relevant to ground-based telescopes on Earth and for Earth-orbiting (or Lagrange point) telescopes.
 
-LDD Steward: [enter steward node here]
+LDD Steward: [SBN Node](https://pds-smallbodies.astro.umd.edu/)
 
 ## Releases
-
-![LDD Automation with PDSEN CI Bot](https://github.com/pds-data-dictionaries/ldd-template/workflows/LDD%20Automation%20with%20PDSEN%20CI%20Bot/badge.svg) [TODO - replace with this repo badge]
 
 * **Stable Release** (the latest released LDDs) - https://pds.nasa.gov/datastandards/dictionaries/
 * **Unstable Release** (the latest working, unstable build) - See the `build/development` 
