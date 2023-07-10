@@ -984,8 +984,12 @@
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <identifier_reference>XSChoice#</identifier_reference>
       <identifier_reference>vertical_coordinate_pixel</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+     </DD_Association>
+     <DD_Association>
       <identifier_reference>horizontal_coordinate_pixel</identifier_reference>
       <reference_type>attribute_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
