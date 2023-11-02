@@ -3,16 +3,16 @@ PDS4 Local Data Dictionary Processing Report
 Configuration:
    LDDTool Version        14.3.0
    LDD Version Id:        1.0.0.0
-   LDD Label Version Id:  1.26
+   LDD Label Version Id:  1.21
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Thu Nov 02 23:31:57 UTC 2023
-   Common Schema          [PDS4_PDS_1K00.xsd]
-   Common Schematron      [PDS4_PDS_1K00.sch]
-   IM Version Id:         1.20.0.0
+   Time                   Thu Nov 02 23:32:00 UTC 2023
+   Common Schema          [PDS4_PDS_1F00.xsd]
+   Common Schematron      [PDS4_PDS_1F00.sch]
+   IM Version Id:         1.15.0.0
    IM Namespace Id:       pds
-   IM Label Version Id:   1.26
+   IM Label Version Id:   1.21
    IM Object Model        [UpperModel.pont]
    IM Data Dictionary     [dd11179.pins]
    IM Configuration File  [MDPTNConfigClassDisp.xml]
@@ -51,99 +51,99 @@ Parsed Input - Header:
 Parsed Input - Attributes:
 
    name                   apparent_visual_magnitude
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The estimated magnitude at the time of observation as seen by the eye, or unfiltered observations.
 
    name                   airmass
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            Amount of air along the line of sight when observing a celestial target. Equivalent to one divided by the cosine of the zenith angle (in degrees).
    minimum value          0
    unit of measure type   Units_of_Optical_Path_Length
 
    name                   photometric
-   version                1.20
+   version                1.15
    value data type        ASCII_Boolean
    description            The photometric attribute specifies whether observations at the time were considered photometric by the observer.
 
    name                   observing_notes
-   version                1.20
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            The observing_notes attribute is an optional field for describing the quality of the given observations.
    minimum characters     1
    maximum characters     255
 
    name                   airmass_time
-   version                1.20
+   version                1.15
    value data type        ASCII_Date_Time_YMD_UTC
    description            The airmass_time attribute specifies the time at which the airmass was measured.
    nillable               true
 
    name                   seeing_full_width_half_maximum
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            This attribute specifies the FWHM of the seeing disk (e.g. a star).
    unit of measure type   Units_of_Angle
 
    name                   ambient_temperature
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The ambient_temperature attribute specifies the measured outside temperature during the observation.
    unit of measure type   Units_of_Temperature
 
    name                   ambient_pressure
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The ambient_pressure attribute specifies the measured outside pressure during the observation.
    unit of measure type   Units_of_Pressure
 
    name                   ambient_humidity
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The humidity attribute specifies the measured outside humidity during the observation, given as a percentage.
    minimum value          0
    maximum value          100
 
    name                   ambient_clouds
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The clouds attribute specifies the measured percentage of clouds present during the observation.
    minimum value          0
    maximum value          100
 
    name                   weather_notes
-   version                1.20
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            The weather_notes attribute is an optional field for describing the weather during the observation.
    minimum characters     1
    maximum characters     255
 
    name                   instrument_temperature
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The instrument_temperature attribute specifies the measured temperature of the instrument.
    unit of measure type   Units_of_Temperature
 
    name                   name
-   version                1.20
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            The name attribute provides a word or combination of words by which some feature is known.
 
    name                   wcs_axes
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            A positive integer recording the number of WCS axes used in an image. 
    minimum value          1
 
    name                   coordinate_system_equinox
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            Time origin of the coordinate system. 
    minimum value          1950
 
    name                   coordinate_system_celestial_pole_longitude
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            Longitude in the native coordinate system of the system's celestial pole. 
    minimum value          0
@@ -151,7 +151,7 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   coordinate_system_celestial_pole_latitude
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            Latitude in the native coordinate system of the system's celestial pole. 
    minimum value          -90
@@ -159,23 +159,23 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   axis_index
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            Positive integer identifying which World_Axis is being described. 
    minimum value          1
 
    name                   coordinate_name
-   version                1.20
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            Name of the celestial coordinate to which this axis corresponds. 
 
    name                   coordinate_system_projection
-   version                1.20
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            Name of the coordinate system projection used for this axis. 
 
    name                   world_coordinate_reference_point
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            World coordinate value at the reference point for this axis. 
    minimum value          -90
@@ -183,74 +183,74 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   horizontal_axis
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            The ebt:pixel_axis_index corresponding to the horizontal axis of an image. 
    minimum value          1
 
    name                   vertical_axis
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            The ebt:pixel_axis_index corresponding to the vertical axis of an image. 
    minimum value          1
 
    name                   world_axis_index
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            An axis of the world coordinate system used for an image, corresponding to the 'i' in the CDi_j formalism. 
    minimum value          1
 
    name                   pixel_axis_index
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            An axis of the pixel coordinate frame used for an image, corresponding to the 'j' in the CDi_j formalism. 
    minimum value          1
 
    name                   element_value
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The value of the matrix element corresponding to a given set of indices. 
 
    name                   parameter_number
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            Integer between 0 and 99 corresponding to a particular non-linear algorithm used in a PV Distortion Matrix. 
    minimum value          0
    maximum value          99
 
    name                   polynomial_order
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            Integer between 2 and 9 corresponding to the order of distortion polynomial in an image using the SIP standard. 
    minimum value          2
    maximum value          9
 
    name                   p_polynomial_degree
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            Integer value representing the degree of the polynomial term in a SIP distortion polynomial, the p in, f.e. A_p_q. 
    minimum value          0
 
    name                   q_polynomial_degree
-   version                1.20
+   version                1.15
    value data type        ASCII_Integer
    description            Integer value representing the degree of the polynomial term in a SIP distortion polynomial, the q in, f.e. A_p_q. 
    minimum value          0
 
    name                   vertical_coordinate_pixel
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            vertical_coordinate_pixel (line) is the vertical coordinate of a specific pixel. 
    unit of measure type   Units_of_Misc
 
    name                   horizontal_coordinate_pixel
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            horizontal_coordinate_pixel (sample) is the horizontal coordinate of a specific pixel. 
    unit of measure type   Units_of_Misc
 
    name                   solar_phase_angle
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The solar_phase_angle attribute provides a measure of the relationship between the instrument viewing position and the sun. Solar phase angle is measured at the target; it is the angle between a vector to the sun and a vector to the instrument.
    minimum value          0
@@ -258,7 +258,7 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   subsolar_latitude
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The subsolar_latitude attribute gives the value of the planetocentric latitude at the subsolar point on the target.
    minimum value          -90
@@ -266,7 +266,7 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   subsolar_longitude
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The subsolar_longitude attribute gives the value of the planetocentric longitude at the subsolar point on the target.
    minimum value          0
@@ -274,7 +274,7 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   subobserver_latitude
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The subobserver_latitude attribute gives the value of the planetocentric latitude at the subobserver point on the target.
    minimum value          -90
@@ -282,7 +282,7 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   subobserver_longitude
-   version                1.20
+   version                1.15
    value data type        ASCII_Real
    description            The subobserver_longitude attribute gives the value of the planetocentric longitude at the subobserver point on the target.
    minimum value          0
@@ -290,7 +290,7 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   frame_spice_name
-   version                1.20
+   version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            The frame_spice_name attribute is a NAIF-recognized string identifier for a reference frame associated with the data. 
 

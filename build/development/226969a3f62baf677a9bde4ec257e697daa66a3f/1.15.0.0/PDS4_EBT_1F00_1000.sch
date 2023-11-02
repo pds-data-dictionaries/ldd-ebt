@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:ebt  Version:1.0.0.0 - Thu Nov 02 23:31:52 UTC 2023 -->
-  <!-- Generated from the PDS4 Information Model Version 1.16.0.0 - System Build 11.1 -->
+  <!-- PDS4 Schematron for Name Space Id:ebt  Version:1.0.0.0 - Thu Nov 02 23:32:00 UTC 2023 -->
+  <!-- Generated from the PDS4 Information Model Version 1.15.0.0 - System Build 11a -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
@@ -127,16 +127,16 @@
   </sch:pattern>
   <sch:pattern>
     <sch:rule context="ebt:World_Axis/ebt:horizontal_coordinate_pixel">
-      <sch:assert test="@unit = ('DN', 'W/m**2/sr/nm/(DN/s)', 'electron/DN', 'pixel')">
+      <sch:assert test="@unit = ('DN', 'electron/DN', 'pixel')">
         <title>ebt:World_Axis/ebt:horizontal_coordinate_pixel/ebt:horizontal_coordinate_pixel</title>
-        The attribute @unit must be equal to one of the following values 'DN', 'W/m**2/sr/nm/(DN/s)', 'electron/DN', 'pixel'.</sch:assert>
+        The attribute @unit must be equal to one of the following values 'DN', 'electron/DN', 'pixel'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:rule context="ebt:World_Axis/ebt:vertical_coordinate_pixel">
-      <sch:assert test="@unit = ('DN', 'W/m**2/sr/nm/(DN/s)', 'electron/DN', 'pixel')">
+      <sch:assert test="@unit = ('DN', 'electron/DN', 'pixel')">
         <title>ebt:World_Axis/ebt:vertical_coordinate_pixel/ebt:vertical_coordinate_pixel</title>
-        The attribute @unit must be equal to one of the following values 'DN', 'W/m**2/sr/nm/(DN/s)', 'electron/DN', 'pixel'.</sch:assert>
+        The attribute @unit must be equal to one of the following values 'DN', 'electron/DN', 'pixel'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
