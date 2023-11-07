@@ -50,19 +50,19 @@
               <ebt:coordinate_system_equinox>2000.0</ebt:coordinate_system_equinox>
               <ebt:coordinate_system_celestial_pole_longitude unit="deg">180.0</ebt:coordinate_system_celestial_pole_longitude>
               <ebt:coordinate_system_celestial_pole_latitude unit="deg">0.0</ebt:coordinate_system_celestial_pole_latitude>
+              <ebt:vertical_coordinate_pixel unit="pixel">5280.0</ebt:vertical_coordinate_pixel>
+              <ebt:horizontal_coordinate_pixel unit="pixel">5280.0</ebt:horizontal_coordinate_pixel>
               <ebt:World_Axis>
                 <ebt:axis_index>1</ebt:axis_index>
                 <ebt:coordinate_name>Right Ascension</ebt:coordinate_name>
                 <ebt:coordinate_system_projection>Gnomonic with polynomial distortion</ebt:coordinate_system_projection>
                 <ebt:world_coordinate_reference_point unit="deg">18.43543</ebt:world_coordinate_reference_point>
-                <ebt:vertical_coordinate_pixel unit="pixel">5280.0</ebt:vertical_coordinate_pixel>
               </ebt:World_Axis>
               <ebt:World_Axis>
                 <ebt:axis_index>2</ebt:axis_index>
                 <ebt:coordinate_name>Declination</ebt:coordinate_name>
                 <ebt:coordinate_system_projection>Gnomonic with polynomial distortion</ebt:coordinate_system_projection>
                 <ebt:world_coordinate_reference_point unit="deg">11.02278</ebt:world_coordinate_reference_point>
-                <ebt:vertical_coordinate_pixel unit="pixel">5280.0</ebt:vertical_coordinate_pixel>
               </ebt:World_Axis>
               <ebt:Reference_Frame_Identification>
                 <ebt:name>FK5</ebt:name>
