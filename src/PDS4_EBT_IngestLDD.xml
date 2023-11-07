@@ -75,8 +75,6 @@
 	<DD_Value_Domain>
 	  <enumeration_flag>false</enumeration_flag>
 	  <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
-	  <minimum_characters>1</minimum_characters>
-	  <maximum_characters>255</maximum_characters>
 	</DD_Value_Domain>
   </DD_Attribute>
   <DD_Attribute>
@@ -174,8 +172,6 @@
 	<DD_Value_Domain>
 	  <enumeration_flag>false</enumeration_flag>
 	  <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
-	  <minimum_characters>1</minimum_characters>
-	  <maximum_characters>255</maximum_characters>
 	</DD_Value_Domain>
   </DD_Attribute>
 
@@ -241,6 +237,7 @@
       <value_data_type>ASCII_Real</value_data_type>
       <minimum_value>1950</minimum_value>
       <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+      <specified_unit_id>yr</specified_unit_id>
     </DD_Value_Domain>
   </DD_Attribute>
   
@@ -259,6 +256,7 @@
       <minimum_value>0</minimum_value>
       <maximum_value>360</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
     </DD_Value_Domain>
   </DD_Attribute>
   
@@ -277,6 +275,7 @@
       <minimum_value>-90</minimum_value>
       <maximum_value>90</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
     </DD_Value_Domain>
   </DD_Attribute>
   
@@ -290,7 +289,7 @@
     </definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Integer</value_data_type>
+      <value_data_type>ASCII_NonNegative_Integer</value_data_type>
       <minimum_value>1</minimum_value>
       <unit_of_measure_type>Units_of_None</unit_of_measure_type>
     </DD_Value_Domain>
@@ -390,6 +389,7 @@
       <minimum_value>-90</minimum_value>
       <maximum_value>360</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
     </DD_Value_Domain>
   </DD_Attribute>
   
@@ -488,8 +488,7 @@
     </definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Integer</value_data_type>
-      <minimum_value>0</minimum_value>
+      <value_data_type>ASCII_NonNegative_Integer</value_data_type>
       <maximum_value>99</maximum_value>
       <unit_of_measure_type>Units_of_None</unit_of_measure_type>
     </DD_Value_Domain>
@@ -524,8 +523,7 @@
     </definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Integer</value_data_type>
-      <minimum_value>0</minimum_value>
+      <value_data_type>ASCII_NonNegative_Integer</value_data_type>
       <unit_of_measure_type>Units_of_None</unit_of_measure_type>
     </DD_Value_Domain>
   </DD_Attribute>
@@ -541,8 +539,7 @@
     </definition>
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Integer</value_data_type>
-      <minimum_value>0</minimum_value>
+      <value_data_type>ASCII_NonNegative_Integer</value_data_type>
       <unit_of_measure_type>Units_of_None</unit_of_measure_type>
     </DD_Value_Domain>
   </DD_Attribute>
@@ -595,6 +592,7 @@
       <minimum_value>0</minimum_value>
       <maximum_value>180</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
     </DD_Value_Domain>
   </DD_Attribute>
 
@@ -613,6 +611,7 @@
       <minimum_value>-90</minimum_value>
       <maximum_value>90</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
     </DD_Value_Domain>
   </DD_Attribute>
 
@@ -631,6 +630,7 @@
       <minimum_value>0</minimum_value>
       <maximum_value>360</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
     </DD_Value_Domain>
   </DD_Attribute>
 
@@ -649,6 +649,7 @@
       <minimum_value>-90</minimum_value>
       <maximum_value>90</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
     </DD_Value_Domain>
   </DD_Attribute>
 
@@ -667,6 +668,7 @@
       <minimum_value>0</minimum_value>
       <maximum_value>360</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
     </DD_Value_Domain>
   </DD_Attribute>
 
