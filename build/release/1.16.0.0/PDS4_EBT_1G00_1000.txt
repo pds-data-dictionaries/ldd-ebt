@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        14.2.3
+   LDDTool Version        14.3.0
    LDD Version Id:        1.0.0.0
    LDD Label Version Id:  1.22
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Thu May 04 00:45:51 UTC 2023
+   Time                   Tue Nov 07 05:25:56 UTC 2023
    Common Schema          [PDS4_PDS_1G00.xsd]
    Common Schematron      [PDS4_PDS_1G00.sch]
    IM Version Id:         1.16.0.0
@@ -71,8 +71,6 @@ Parsed Input - Attributes:
    version                1.16
    value data type        ASCII_Short_String_Collapsed
    description            The observing_notes attribute is an optional field for describing the quality of the given observations.
-   minimum characters     1
-   maximum characters     255
 
    name                   airmass_time
    version                1.16
@@ -116,8 +114,6 @@ Parsed Input - Attributes:
    version                1.16
    value data type        ASCII_Short_String_Collapsed
    description            The weather_notes attribute is an optional field for describing the weather during the observation.
-   minimum characters     1
-   maximum characters     255
 
    name                   instrument_temperature
    version                1.16
@@ -160,7 +156,7 @@ Parsed Input - Attributes:
 
    name                   axis_index
    version                1.16
-   value data type        ASCII_Integer
+   value data type        ASCII_NonNegative_Integer
    description            Positive integer identifying which World_Axis is being described. 
    minimum value          1
 
@@ -213,9 +209,8 @@ Parsed Input - Attributes:
 
    name                   parameter_number
    version                1.16
-   value data type        ASCII_Integer
+   value data type        ASCII_NonNegative_Integer
    description            Integer between 0 and 99 corresponding to a particular non-linear algorithm used in a PV Distortion Matrix. 
-   minimum value          0
    maximum value          99
 
    name                   polynomial_order
@@ -227,15 +222,13 @@ Parsed Input - Attributes:
 
    name                   p_polynomial_degree
    version                1.16
-   value data type        ASCII_Integer
+   value data type        ASCII_NonNegative_Integer
    description            Integer value representing the degree of the polynomial term in a SIP distortion polynomial, the p in, f.e. A_p_q. 
-   minimum value          0
 
    name                   q_polynomial_degree
    version                1.16
-   value data type        ASCII_Integer
+   value data type        ASCII_NonNegative_Integer
    description            Integer value representing the degree of the polynomial term in a SIP distortion polynomial, the q in, f.e. A_p_q. 
-   minimum value          0
 
    name                   vertical_coordinate_pixel
    version                1.16

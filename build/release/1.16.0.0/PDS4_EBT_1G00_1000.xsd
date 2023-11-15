@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:ebt  Version:1.0.0.0 - Thu May 04 00:45:51 UTC 2023 -->
+  <!-- PDS4 XML/Schema for Name Space Id:ebt  Version:1.0.0.0 - Tue Nov 07 05:25:56 UTC 2023 -->
   <!-- Generated from the PDS4 Information Model Version 1.16.0.0 - System Build 11.1 -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
@@ -447,9 +447,10 @@ _TBD_Ingest_LDD
       <xs:documentation>Positive integer identifying which World_Axis is
         being described. </xs:documentation>
     </xs:annotation>
-    <xs:restriction base="pds:ASCII_Integer">
+    <xs:restriction base="pds:ASCII_NonNegative_Integer">
+    	<xs:pattern value='[0-9]+'/>
      <xs:minInclusive value="1"/>
-     <xs:maxInclusive value="9223372036854775807"/>
+     <xs:maxInclusive value="18446744073709551615"/>
 	   </xs:restriction>
   </xs:simpleType>
 
@@ -626,9 +627,10 @@ _TBD_Ingest_LDD
         polynomial term in a SIP distortion polynomial, the p in, f.e.
         A_p_q. </xs:documentation>
     </xs:annotation>
-    <xs:restriction base="pds:ASCII_Integer">
+    <xs:restriction base="pds:ASCII_NonNegative_Integer">
+    	<xs:pattern value='[0-9]+'/>
      <xs:minInclusive value="0"/>
-     <xs:maxInclusive value="9223372036854775807"/>
+     <xs:maxInclusive value="18446744073709551615"/>
 	   </xs:restriction>
   </xs:simpleType>
 
@@ -638,7 +640,8 @@ _TBD_Ingest_LDD
         particular non-linear algorithm used in a PV Distortion Matrix.
         </xs:documentation>
     </xs:annotation>
-    <xs:restriction base="pds:ASCII_Integer">
+    <xs:restriction base="pds:ASCII_NonNegative_Integer">
+    	<xs:pattern value='[0-9]+'/>
      <xs:minInclusive value="0"/>
      <xs:maxInclusive value="99"/>
 	   </xs:restriction>
@@ -684,9 +687,10 @@ _TBD_Ingest_LDD
         polynomial term in a SIP distortion polynomial, the q in, f.e.
         A_p_q. </xs:documentation>
     </xs:annotation>
-    <xs:restriction base="pds:ASCII_Integer">
+    <xs:restriction base="pds:ASCII_NonNegative_Integer">
+    	<xs:pattern value='[0-9]+'/>
      <xs:minInclusive value="0"/>
-     <xs:maxInclusive value="9223372036854775807"/>
+     <xs:maxInclusive value="18446744073709551615"/>
 	   </xs:restriction>
   </xs:simpleType>
 
