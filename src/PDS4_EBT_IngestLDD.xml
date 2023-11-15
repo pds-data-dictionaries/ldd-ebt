@@ -7,12 +7,33 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
   <name>Earth-Based Telescope</name>
-  <ldd_version_id>1.0.0.0</ldd_version_id>
+  <ldd_version_id>1.1.0.0</ldd_version_id>
   <dictionary_type>Discipline</dictionary_type>
   <full_name>Ben Hirsch</full_name>
   <steward_id>sbn</steward_id>
   <namespace_id>ebt</namespace_id>
-  <last_modification_date_time>2023-03-15</last_modification_date_time>
+  <comment>
+    version 1.1.0 2023-11-15
+     - Updated to IM version 1.21.0.0
+     - Replaced apparent_visual_magnitude attribute with an Apparent_Magnitude class that
+       can specify filter.
+     - Added telescope_tracking_rate attribute to Instrument_Parameters to record
+       Sidereal/Non-Sidereal tracking.
+     - Promoted horizontal/vertical_coordinate_pixel attributes from World_Axis class to
+       Reference_Frame_Parameters class.
+     - Added specified_unit_id to attributes with minimum and maximum values (degrees for
+       angles).
+     - Removed redundant maximum length of 255 from attributes with
+       ASCII_Short_String_Collapsed data type.
+     - Changed attributes with a minimum of 0 or 1 to ASCII_NonNegative_Integer.
+     - Removed unworkable schematron that required coordinate_system_equinox to be nil
+       when Reference_Frame_Identification/name is either ICRS or GAPPT.
+     - Added schematron rule to prohibit coordinate_system_equinox when
+       Reference_Frame_Identification/name is either ICRS or GAPPT and another that
+       requires coordinate_system_equinox when that's not the case.
+     - coordinate_system_equinox is now nillable.
+  </comment>
+  <last_modification_date_time>2023-11-15</last_modification_date_time>
 
 <!-- EBT Parameters attributes -->
 
