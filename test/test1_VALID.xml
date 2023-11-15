@@ -43,15 +43,18 @@
 
     <Discipline_Area>
       <ebt:Earth_Based_Telescope_Parameters>
+	    <ebt:Apparent_Magnitude>
+		  <ebt:magnitude_filter>Clear</ebt:magnitude_filter>
+		  <ebt:magnitude_value>5</ebt:magnitude_value>
+		</ebt:Apparent_Magnitude>
         <ebt:Telescope_Geometry>
           <ebt:World_Coordinate_System>
             <ebt:Reference_Frame_Parameters>
               <ebt:wcs_axes>2</ebt:wcs_axes>
-              <ebt:coordinate_system_equinox>2000.0</ebt:coordinate_system_equinox>
               <ebt:coordinate_system_celestial_pole_longitude unit="deg">180.0</ebt:coordinate_system_celestial_pole_longitude>
               <ebt:coordinate_system_celestial_pole_latitude unit="deg">0.0</ebt:coordinate_system_celestial_pole_latitude>
-              <ebt:vertical_coordinate_pixel unit="pixel">5280.0</ebt:vertical_coordinate_pixel>
-              <ebt:horizontal_coordinate_pixel unit="pixel">5280.0</ebt:horizontal_coordinate_pixel>
+			  <ebt:vertical_coordinate_pixel unit="pixel">5280.0</ebt:vertical_coordinate_pixel>
+			  <ebt:horizontal_coordinate_pixel unit="pixel">5280.0</ebt:horizontal_coordinate_pixel>
               <ebt:World_Axis>
                 <ebt:axis_index>1</ebt:axis_index>
                 <ebt:coordinate_name>Right Ascension</ebt:coordinate_name>
@@ -65,7 +68,7 @@
                 <ebt:world_coordinate_reference_point unit="deg">11.02278</ebt:world_coordinate_reference_point>
               </ebt:World_Axis>
               <ebt:Reference_Frame_Identification>
-                <ebt:name>FK5</ebt:name>
+                <ebt:name>ICRS</ebt:name>
               </ebt:Reference_Frame_Identification>
             </ebt:Reference_Frame_Parameters>
             <ebt:Coordinate_Frame_Transformation_Matrix>
@@ -103,6 +106,9 @@
             </ebt:PV_Distortion_Matrix>
           </ebt:World_Coordinate_System>
         </ebt:Telescope_Geometry>
+		<ebt:Instrument_Parameters>
+		  <ebt:telescope_tracking_rate>Sidereal</ebt:telescope_tracking_rate>
+		</ebt:Instrument_Parameters>
         <ebt:Observing_Conditions>
           <ebt:Airmass>
             <ebt:airmass unit="airmass">1.252</ebt:airmass>
