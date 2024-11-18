@@ -1,0 +1,74 @@
+
+>>  INFO LDDTOOL Version: 15.2.2
+>>  INFO IM Version Id: 1.15.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.21
+>>  INFO Date: Mon Nov 18 06:51:48 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-15.2.2/Data/
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:ebt
+>>> INFO Init:  - Config.Properties Namespace Id Using:ebt
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <coordinate_system_equinox> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <airmass> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <ambient_humidity> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <ambient_humidity> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <ambient_clouds> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <ambient_clouds> - The default maximum value provided by the attribute's data type is being overridden with 100
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <wcs_axes> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <coordinate_system_equinox> - The default minimum value provided by the attribute's data type is being overridden with 1950
+>>> INFO Attribute: <coordinate_system_celestial_pole_longitude> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <coordinate_system_celestial_pole_longitude> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <coordinate_system_celestial_pole_latitude> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <coordinate_system_celestial_pole_latitude> - The default maximum value provided by the attribute's data type is being overridden with 90
+>>> INFO Attribute: <axis_index> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <world_coordinate_reference_point> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <world_coordinate_reference_point> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <horizontal_axis> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <vertical_axis> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <world_axis_index> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <pixel_axis_index> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <parameter_number> - The default maximum value provided by the attribute's data type is being overridden with 99
+>>> INFO Attribute: <polynomial_order> - The default minimum value provided by the attribute's data type is being overridden with 2
+>>> INFO Attribute: <polynomial_order> - The default maximum value provided by the attribute's data type is being overridden with 9
+>>> INFO Attribute: <solar_phase_angle> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <solar_phase_angle> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <subsolar_latitude> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <subsolar_latitude> - The default maximum value provided by the attribute's data type is being overridden with 90
+>>> INFO Attribute: <subsolar_longitude> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <subsolar_longitude> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <subobserver_latitude> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <subobserver_latitude> - The default maximum value provided by the attribute's data type is being overridden with 90
+>>> INFO Attribute: <subobserver_longitude> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <subobserver_longitude> - The default maximum value provided by the attribute's data type is being overridden with 360
+
+ -- LDDTool Execution Summary --
+     0 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1F00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - IM Version: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-ebt/ldd-ebt/src/PDS4_EBT_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_EBT_1F00_1100.xsd
+     - ./PDS4_EBT_1F00_1100.sch
+     - ./PDS4_EBT_1F00_1100.xml
+     - ./export/PDS4_PDS_1F00.JSON
+
+>>  INFO Exit(0)
