@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:ebt  Version:1.1.0.0 - Thu Nov 13 23:34:25 UTC 2025 -->
+  <!-- PDS4 Schematron for Name Space Id:ebt  Version:1.1.0.0 - Thu Nov 19 22:30:35 UTC 2026 -->
   <!-- Generated from the PDS4 Information Model Version 1.24.0.0 - System Build 15.1 -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
@@ -35,115 +35,10 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:rule context="ebt:Airmass/ebt:airmass">
-      <sch:assert test="@unit = ('airmass')">
-        <title>ebt:Airmass/ebt:airmass/ebt:airmass</title>
-        The attribute @unit must be equal to one of the following values 'airmass'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Instrument_Parameters/ebt:instrument_temperature">
-      <sch:assert test="@unit = ('K', 'degC')">
-        <title>ebt:Instrument_Parameters/ebt:instrument_temperature/ebt:instrument_temperature</title>
-        The attribute @unit must be equal to one of the following values 'K', 'degC'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Reference_Frame_Parameters/ebt:coordinate_system_celestial_pole_latitude">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>ebt:Reference_Frame_Parameters/ebt:coordinate_system_celestial_pole_latitude/ebt:coordinate_system_celestial_pole_latitude</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Reference_Frame_Parameters/ebt:coordinate_system_celestial_pole_longitude">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>ebt:Reference_Frame_Parameters/ebt:coordinate_system_celestial_pole_longitude/ebt:coordinate_system_celestial_pole_longitude</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Reference_Frame_Parameters/ebt:horizontal_coordinate_pixel">
-      <sch:assert test="@unit = ('DN', 'W/m**2/sr/nm/(DN/s)', 'electron/DN', 'electrons', 'nm/mm', 'pixel')">
-        <title>ebt:Reference_Frame_Parameters/ebt:horizontal_coordinate_pixel/ebt:horizontal_coordinate_pixel</title>
-        The attribute @unit must be equal to one of the following values 'DN', 'W/m**2/sr/nm/(DN/s)', 'electron/DN', 'electrons', 'nm/mm', 'pixel'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Reference_Frame_Parameters/ebt:vertical_coordinate_pixel">
-      <sch:assert test="@unit = ('DN', 'W/m**2/sr/nm/(DN/s)', 'electron/DN', 'electrons', 'nm/mm', 'pixel')">
-        <title>ebt:Reference_Frame_Parameters/ebt:vertical_coordinate_pixel/ebt:vertical_coordinate_pixel</title>
-        The attribute @unit must be equal to one of the following values 'DN', 'W/m**2/sr/nm/(DN/s)', 'electron/DN', 'electrons', 'nm/mm', 'pixel'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Seeing/ebt:seeing_full_width_half_maximum">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>ebt:Seeing/ebt:seeing_full_width_half_maximum/ebt:seeing_full_width_half_maximum</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Target_Geometry/ebt:solar_phase_angle">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>ebt:Target_Geometry/ebt:solar_phase_angle/ebt:solar_phase_angle</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Target_Geometry/ebt:subobserver_latitude">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>ebt:Target_Geometry/ebt:subobserver_latitude/ebt:subobserver_latitude</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Target_Geometry/ebt:subobserver_longitude">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>ebt:Target_Geometry/ebt:subobserver_longitude/ebt:subobserver_longitude</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Target_Geometry/ebt:subsolar_latitude">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>ebt:Target_Geometry/ebt:subsolar_latitude/ebt:subsolar_latitude</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Target_Geometry/ebt:subsolar_longitude">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>ebt:Target_Geometry/ebt:subsolar_longitude/ebt:subsolar_longitude</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Weather/ebt:ambient_pressure">
-      <sch:assert test="@unit = ('Pa', 'bar', 'hPa', 'mbar')">
-        <title>ebt:Weather/ebt:ambient_pressure/ebt:ambient_pressure</title>
-        The attribute @unit must be equal to one of the following values 'Pa', 'bar', 'hPa', 'mbar'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:Weather/ebt:ambient_temperature">
-      <sch:assert test="@unit = ('K', 'degC')">
-        <title>ebt:Weather/ebt:ambient_temperature/ebt:ambient_temperature</title>
-        The attribute @unit must be equal to one of the following values 'K', 'degC'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:rule context="ebt:World_Axis/ebt:coordinate_system_projection">
       <sch:assert test=". = ('Gnomonic', 'Gnomonic plus SIP', 'Gnomonic with distortion term', 'Gnomonic with polynomial distortion', 'Gnomonic with polynomial distortion plus SIP', 'Hammer-Aitoff', 'Mercator', 'North Celestial Pole', 'Orthographic', 'Sanson-Flamsteed', 'Stereographic', 'Zenithal Equidistant', 'Zenithal with distortion term')">
         <title>ebt:World_Axis/ebt:coordinate_system_projection/ebt:coordinate_system_projection</title>
         The attribute ebt:World_Axis/ebt:coordinate_system_projection must be equal to one of the following values 'Gnomonic', 'Gnomonic plus SIP', 'Gnomonic with distortion term', 'Gnomonic with polynomial distortion', 'Gnomonic with polynomial distortion plus SIP', 'Hammer-Aitoff', 'Mercator', 'North Celestial Pole', 'Orthographic', 'Sanson-Flamsteed', 'Stereographic', 'Zenithal Equidistant', 'Zenithal with distortion term'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="ebt:World_Axis/ebt:world_coordinate_reference_point">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>ebt:World_Axis/ebt:world_coordinate_reference_point/ebt:world_coordinate_reference_point</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
